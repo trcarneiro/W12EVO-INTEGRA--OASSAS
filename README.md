@@ -1,27 +1,27 @@
-README do Projeto de Integração do Software W12 Evo com o Sistema Financeiro Asaas
+Integração W12 Evo - Assas
 
-Este é um projeto de integração do software de gerenciamento de academias W12 Evo com o sistema financeiro Asaas. O objetivo é automatizar o processo de exportação de dados do W12 Evo e importação para o Asaas, melhorando a gestão financeira das academias e reduzindo o tempo gasto com tarefas manuais.
-
+Este projeto tem como objetivo integrar o software de gerenciamento de academias W12 Evo com o sistema financeiro Assas. A integração será realizada através de scripts Python que irão automatizar o processo de exportação de dados do W12 Evo e importação para o sistema financeiro Assas.
 Scripts Python
 
-O projeto é composto por três scripts Python:
+O projeto será composto por três scripts Python:
 
-Script 1 - Exportação de dados do W12 Evo: se conecta ao banco de dados do W12 Evo e exporta os dados necessários para a integração com o Asaas.
+    Script 1 - Exportação de dados do W12 Evo: Este script irá se conectar ao banco de dados do W12 Evo e exportar os dados necessários para a integração com o sistema financeiro Assas. Os dados serão exportados em um formato compatível com o sistema financeiro.
 
-Script 2 - Importação de dados para o sistema financeiro Asaas: se conecta ao Asaas e importa os dados exportados pelo script 1, para as contas correntes dos clientes no sistema financeiro.
+    Script 2 - Importação de dados para o sistema financeiro Assas: Este script irá se conectar ao sistema financeiro Assas e importar os dados exportados pelo script 1. Os dados serão importados para as contas correntes dos clientes no sistema financeiro.
 
-Script 3 - Sincronização de dados: verifica periodicamente se há novos dados a serem exportados do W12 Evo e importados para o Asaas. Caso haja, os dados são atualizados automaticamente.
+    Script 3 - Sincronização de dados: Este script irá verificar periodicamente se há novos dados a serem exportados do W12 Evo e importados para o sistema financeiro Assas. Caso haja, os dados serão atualizados automaticamente.
 
 Classe Integracao
 
-A classe Integracao realiza a integração do W12 Evo com outras plataformas ou sistemas, incluindo o Asaas. A classe contém diversos métodos, cada um responsável por uma tarefa específica. Os métodos podem ser usados para buscar informações de clientes e vendas, gerar cobranças, marcar recebimentos, enviar notificações, entre outras tarefas relacionadas à gestão financeira da academia.
+A classe Integracao tem como objetivo realizar a integração entre o software de gerenciamento de academias W12 Evo e outras plataformas ou sistemas. No exemplo dado, a classe realiza a integração com o sistema financeiro Assas.
 
-A classe utiliza a biblioteca requests para realizar as chamadas à API do W12 Evo e armazena o token de acesso e a chave de API em variáveis internas para autenticação.
+A classe é composta por diversos métodos, cada um responsável por uma tarefa específica. O método busca_clientes_evo é responsável por buscar informações dos clientes cadastrados no W12 Evo. O método busca_info_venda busca informações sobre as vendas realizadas no W12 Evo.
 
-Instruções de uso
+Outros métodos da classe Integracao podem ser utilizados para gerar cobranças, marcar recebimentos, enviar notificações, entre outras tarefas relacionadas à gestão financeira da academia.
 
-Para utilizar a classe Integracao, basta instanciá-la e chamar os métodos necessários para realizar a integração com outras plataformas ou sistemas. Além disso, é preciso ter acesso ao banco de dados do W12 Evo e ao sistema financeiro Asaas.
+Os métodos da classe Integracao utilizam a biblioteca requests para realizar as chamadas à API do W12 Evo. Além disso, a classe armazena o token de acesso e a chave de API do W12 Evo em variáveis internas para autenticação.
 
+Para utilizar a classe Integracao, basta instanciá-la e chamar os métodos necessários para realizar a integração com outras plataformas ou sistemas.
 Considerações finais
 
-A integração do software W12 Evo de academias com o sistema financeiro Asaas é uma solução eficiente para melhorar a gestão financeira das academias e aumentar a produtividade da equipe. Com a automação do proc
+A integração do software W12 Evo de academias com o sistema financeiro Assas trará muitos benefícios para as academias, pois permitirá uma gestão financeira mais eficiente e simplificada. Além disso, a automatização do processo de exportação e importação de dados reduzirá o tempo gasto com tarefas manuais, aumentando a produtividade e a eficiência da equipe.
