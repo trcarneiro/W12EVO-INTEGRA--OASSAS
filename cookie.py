@@ -1,3 +1,12 @@
+#from autevo import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as ECz
+import undetected_chromedriver as uc
+from fake_useragent import UserAgent, FakeUserAgentError
+import os, pickle
+from os.path import exists
+
 class Browser:    
     def __init__(self):
         
@@ -7,6 +16,12 @@ class Browser:
         except FakeUserAgentError:
             self.user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
         options = uc.ChromeOptions()
+        #options = ChromeOptions()
+        options.add_argument("--start-maximized")
+        #options.add_argument("--headless")
+        options.add_argument('--no-sandbox')   
+        options.add_argument('--disable-dev-shm-usage')   
+        
         # options.add_argument("--user-agent=" + self.user_agent)
         self.bot = uc.Chrome(options=options, use_subprocess=True)
         self.bot.delete_all_cookies()
